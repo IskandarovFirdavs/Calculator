@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // Asosiy katalogni aniqlash
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"] // Alias uchun o'rnatish
     }
-  }
+  },
+  "exclude": ["node_modules"] // Node_modules-ni hisobga olmaslik
 }
