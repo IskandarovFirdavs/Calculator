@@ -1,11 +1,9 @@
-const path = require("path");
-
-module.exports = {
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      "@": path.resolve(__dirname, "./src"),
-    };
-    return config;
+const nextConfig = {
+  output: "export",
+  trailingSlash: true, // Static fayllar uchun zarur
+  compiler: {
+    styledComponents: true, // Styled-components uchun optimizatsiya
   },
 };
+
+export default nextConfig;

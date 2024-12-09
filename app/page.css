@@ -1,0 +1,82 @@
+/* umumiy konteyner */
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f3f4f6; /* yoki #1f2937 (dark theme) */
+  color: #1f2937; /* yoki #f3f4f6 (dark theme) */
+  border: 1px solid #d1d5db; /* yoki #4b5563 (dark theme) */
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ekran */
+.screen {
+  background-color: #d1d5db; /* yoki #4b5563 (dark theme) */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: right;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ifoda */
+.expression {
+  font-size: 18px;
+  color: #1f2937; /* yoki #f3f4f6 (dark theme) */
+}
+
+/* natija */
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937; /* yoki #f3f4f6 (dark theme) */
+}
+
+/* tugmalar konteyneri */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+/* oddiy tugma */
+.button {
+  background-color: #10b981; /* yoki #374151 (dark theme) */
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #059669; /* yoki #4b5563 (dark theme) */
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+/* amaliy tugma */
+.action-button {
+  background-color: #dc2626;
+}
+
+.action-button:hover {
+  background-color: #b91c1c;
+}
+
+/* tema o'zgarishi tugmasi */
+.theme-toggle {
+  margin-top: 20px;
+  grid-column: span 5;
+  font-weight: bold;
+  background-color: #f3f4f6; /* yoki #1f2937 (dark theme) */
+  color: #1f2937; /* yoki #f3f4f6 (dark theme) */
+}

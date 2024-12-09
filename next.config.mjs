@@ -1,4 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: "export",
+  trailingSlash: true, // Sahifa oxiriga "/" qo‘shadi
+};
 
 export default nextConfig;
